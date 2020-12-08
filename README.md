@@ -24,7 +24,7 @@ git checkout release-3.11
 ```
 Step 5: Download the inventory (Change the cluster hosname to your own domain & wilcard domain for application apps.master.192.168.10.5.xip.io to your name like apps.<yourdomain>.<yourhostip>.xip.io)
 ```sh
-wget https://raw.githubusercontent.com/techmogun/okd-3.11-origin/master/inventory_wildcard_external
+wget https://raw.githubusercontent.com/ramesh2/OpenShift-OKD/master/inventory_wildcard_external
 ```
 Step 6: Run the playbook for prerequisites. It should completed in all the stages
 
