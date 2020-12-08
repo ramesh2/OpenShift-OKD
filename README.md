@@ -41,4 +41,4 @@ htpasswd -b /etc/origin/master/htpasswd ocpadmin <password>
 oc adm policy add-cluster-role-to-user cluster-admin ocpadmin
 ```
 #login to openshift webconsole in your browser
-https://master.techmogun.local:8443
+https://bofa.master.com:8443
