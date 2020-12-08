@@ -96,7 +96,7 @@ openshift_master_console_port=8443
 
 #Default:  openshift_master_cluster_method=native
 # Internal cluster name
-openshift_master_cluster_hostname=master.techmogun.local
+openshift_master_cluster_hostname=bofa.master.com
 
 # NOTE: Default wildcard domain for applications
 openshift_master_default_subdomain=apps.master.192.168.10.5.xip.io
@@ -172,17 +172,17 @@ etcd
 nodes
 
 [nfs]
-master.techmogun.local
+bofa.master.com
 [masters]
-master.techmogun.local
+bofa.master.com
 
 [etcd]
-master.techmogun.local
+bofa.master.com
 
 [nodes]
 ## All-In-One with CRI-O
 #ocp.example.com openshift_node_group_name='node-config-all-in-one-crio' openshift_node_problem_detector_install=true
-master.techmogun.local openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
+bofa.master.com openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
 
 #
 # END OF FILE
