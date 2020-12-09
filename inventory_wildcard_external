@@ -172,17 +172,17 @@ etcd
 nodes
 
 [nfs]
-bofa.master.com
+bofa.master.local
 [masters]
-bofa.master.com
+bofa.master.local
 
 [etcd]
-bofa.master.com
+bofa.master.local
 
 [nodes]
 ## All-In-One with CRI-O
 #ocp.example.com openshift_node_group_name='node-config-all-in-one-crio' openshift_node_problem_detector_install=true
-bofa.master.com openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
+bofa.master.local openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
 
 #
 # END OF FILE
