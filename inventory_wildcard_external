@@ -96,7 +96,7 @@ openshift_master_console_port=8443
 
 #Default:  openshift_master_cluster_method=native
 # Internal cluster name
-openshift_master_cluster_hostname=bofa.master.com
+openshift_master_cluster_hostname=bofa.master.local
 
 # NOTE: Default wildcard domain for applications
 openshift_master_default_subdomain=apps.master.40.71.32.12.xip.io
