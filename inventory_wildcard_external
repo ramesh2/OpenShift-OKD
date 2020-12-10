@@ -96,10 +96,10 @@ openshift_master_console_port=8443
 
 #Default:  openshift_master_cluster_method=native
 # Internal cluster name
-openshift_master_cluster_hostname=bofa.master.local
+openshift_master_cluster_hostname=bofa.node1.local
 
 # NOTE: Default wildcard domain for applications
-openshift_master_default_subdomain=apps.master.40.71.32.12.xip.io
+openshift_master_default_subdomain=apps.master.40.71.0.47.xip.io
 
 ###########################################################################
 ### OpenShift Network Vars
@@ -172,17 +172,17 @@ etcd
 nodes
 
 [nfs]
-bofa.master.local
+bofa.node1.local
 [masters]
-bofa.master.local
+bofa.node1.local
 
 [etcd]
-bofa.master.local
+bofa.node1.local
 
 [nodes]
 ## All-In-One with CRI-O
 #ocp.example.com openshift_node_group_name='node-config-all-in-one-crio' openshift_node_problem_detector_install=true
-bofa.master.local openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
+bofa.node1.local openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
 
 #
 # END OF FILE
