@@ -9,7 +9,7 @@ yum -y update
 Step 2: For password less login
 ```sh
 ssh-keygen -t rsa
-ssh-copy-id root@master.techmogun.local
+ssh-copy-id root@bofa.master.local
 ```
 Step 3: Yum install base packages
 ```sh
