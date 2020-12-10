@@ -9,7 +9,7 @@ yum -y update
 Step 2: For password less login
 ```sh
 ssh-keygen -t rsa
-ssh-copy-id root@bofa.master.local
+ssh-copy-id root@bofa.node1.local
 ```
 Step 3: Yum install base packages
 ```sh
@@ -41,4 +41,4 @@ htpasswd -b /etc/origin/master/htpasswd ocpadmin <password>
 oc adm policy add-cluster-role-to-user cluster-admin ocpadmin
 ```
 #login to openshift webconsole in your browser
-https://bofa.master.com:8443
+https://bofa.node1.local:8443
