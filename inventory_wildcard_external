@@ -34,8 +34,8 @@
 ### Ansible Vars
 ###########################################################################
 timeout=60
-ansible_user=root
-#ansible_become=yes
+ansible_user=openshiftuser1
+ansible_become=yes
 
 ###########################################################################
 ### OpenShift Basic Vars
@@ -96,10 +96,10 @@ openshift_master_console_port=8443
 
 #Default:  openshift_master_cluster_method=native
 # Internal cluster name
-openshift_master_cluster_hostname=bofa.node1.local
+openshift_master_cluster_hostname=bofa.master.node1
 
 # NOTE: Default wildcard domain for applications
-openshift_master_default_subdomain=apps.master.40.71.0.47.xip.io
+openshift_master_default_subdomain=apps.master.10.1.0.4.xip.io
 
 ###########################################################################
 ### OpenShift Network Vars
@@ -172,17 +172,17 @@ etcd
 nodes
 
 [nfs]
-bofa.node1.local
+bofa.master.node1
 [masters]
-bofa.node1.local
+bofa.master.node1
 
 [etcd]
-bofa.node1.local
+bofa.master.node1
 
 [nodes]
 ## All-In-One with CRI-O
 #ocp.example.com openshift_node_group_name='node-config-all-in-one-crio' openshift_node_problem_detector_install=true
-bofa.node1.local openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
+bofa.master.node1 openshift_node_group_name='node-config-all-in-one' openshift_node_problem_detector_install=true
 
 #
 # END OF FILE
