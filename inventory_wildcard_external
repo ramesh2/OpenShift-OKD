@@ -34,8 +34,8 @@
 ### Ansible Vars
 ###########################################################################
 timeout=60
-ansible_user=openshiftuser1
-ansible_become=yes
+ansible_user=root
+#ansible_become=yes
 
 ###########################################################################
 ### OpenShift Basic Vars
@@ -99,7 +99,7 @@ openshift_master_console_port=8443
 openshift_master_cluster_hostname=bofa.master.node1
 
 # NOTE: Default wildcard domain for applications
-openshift_master_default_subdomain=apps.master.10.1.0.4.xip.io
+openshift_master_default_subdomain=apps.master.52.173.147.110.xip.io
 
 ###########################################################################
 ### OpenShift Network Vars
